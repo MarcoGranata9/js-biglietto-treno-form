@@ -10,6 +10,8 @@ const ticketPrice = 0.21;
 
 const sendBtn = document.getElementById("sendbtn");
 
+const delBtn = document.getElementById("delbtn");
+
 let totalPrice 
 
 let totalPrice20
@@ -46,3 +48,10 @@ sendBtn.addEventListener("click", function () {
     }
 })
 
+delBtn.addEventListener("click", function () {
+    distance.value = "";
+    age.value = "";
+    username.value = "";
+    document.getElementById("greeting").innerHTML = "";
+    document.getElementById("ticket").innerHTML = "";
+})

@@ -29,7 +29,7 @@ h1 {
     padding: 10px 0;
 }
 
-#sendbtn {
+.btn {
     color: lightcoral;
     background-color: gray;
     border: 0;
@@ -38,7 +38,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-#sendbtn:hover {
+.btn:hover {
     background-color: rgb(210, 210, 210);
     cursor: pointer;
 }

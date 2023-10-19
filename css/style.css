@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightcoral;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+section {
+    background-color: white;
+    margin-top: 3rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    padding: 30px 0;
+}
+
+.form > *{
+    padding: 10px 0;
+}
+
+#sendbtn {
+    color: lightcoral;
+    background-color: gray;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#sendbtn:hover {
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
+}

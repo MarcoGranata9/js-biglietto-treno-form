@@ -24,17 +24,21 @@ sendBtn.addEventListener("click", function () {
 
     // Logica
     totalPrice = distanceValue * ticketPrice
-    message = `Il prezzo del biglietto è ${totalPrice}`
+    message = `Il prezzo del biglietto è € ${totalPrice}`
     console.log(message)
+    document.getElementById("ticket").innerHTML = message
 
     if (ageValue < 18) 
     {
         totalPrice20 = totalPrice - (totalPrice * 0.20);
-        message = `Il prezzo del biglietto è ${totalPrice20.toFixed(2)}`
+        message = `Il prezzo del biglietto è € ${totalPrice20.toFixed(2)}`
         console.log(message);
+        document.getElementById("ticket").innerHTML = message
     } else if (ageValue > 65) {
         totalPrice40 = totalPrice - (totalPrice * 0.40);
-        message = `Il prezzo del biglietto è ${totalPrice40.toFixed(2)}`
+        message = `Il prezzo del biglietto è € ${totalPrice40.toFixed(2)}`
         console.log(message);
+        document.getElementById("ticket").innerHTML = message
     }
 })
+
